@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  node-react-starter-app:
+    image: rohitr1612/node-react-starter-app:prod
+    build: 
+      context: .
+      target: prod
+    container_name: node-react-starter-app
+    restart: always
+    volumes: 
+      - .:/app
+    ports:
+      - "80:5000"
+    networks: 
+      - node-react-starter-network
+
+networks: 
+  node-react-starter-network:
+    name: node-react-starter-network
