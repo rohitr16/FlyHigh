@@ -1,0 +1,126 @@
+.input_container {
+    padding: 10px;
+    box-shadow: 0px 0px 2px 2px #eef1f1;   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+@media only screen and (min-width: 56.25em) {
+    .input_container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+
+.input_box {
+    padding: 5px;
+}
+
+@media only screen and (min-width: 56.25em) {
+    .input_box {
+       width: 50%;
+    }
+    
+}
+
+.list-wrapper {
+    list-style: none;
+    border: 1px solid #eceaeaeb;
+    box-shadow: 1px 0px 1px 2px #ececef;
+    width: 50%;
+    right: 10px;
+    margin: 0;
+    margin-top: 40px;
+    padding: 15px;
+    position: absolute;
+    z-index: 999;
+    background-color: #ffffff;
+    display: none;
+}
+
+.show-list {
+    display: block;
+}
+
+.list-items{
+    padding: 5px;
+}
+
+.list-items:hover{
+    background-color: #eceaeaeb;
+    cursor: pointer;
+}
+
+.list-item-active {
+    background-color: #eceaeaeb;
+}
+
+.name-label {
+    font-weight: 600;
+}
+
+
+.input-box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.selected-code-list {
+    background: #ebebeb;
+    padding: 2px 5px;
+    padding-right: 25px;
+    margin-left: 4px;
+    position: relative;
+    border-radius: 2px;
+    align-items: center;
+    display: flex;
+}
+
+.selected-code-list--child {
+    background: #bdb7b7;
+    height: 15px;
+    width: 15px;
+    right: 5px;
+    top: 5px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.selected-code-list--child::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 3px;
+    transform: rotate(45deg);
+    left: 7px;
+    border-bottom: 8px solid white;
+}
+
+.selected-code-list--child::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 3px;
+    transform: rotate(-45deg);
+    left: 7px;
+    border-bottom: 8px solid white;
+}
+
+.json-data-wrappper {
+    margin-top: 10px;
+    width: 90vw;
+}
+
+.h3-header {
+    font-size: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "origin": "FRA",
+    "destination": "FCO",
+    "departureDate": "2023-01-13",
+    "returnDate": "2023-01-14",
+    "seatAvailability": "7",
+    "price": {
+      "amount": 128.96,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af"
+  },
+  {
+    "origin": "FRA",
+    "destination": "DUS",
+    "departureDate": "2023-01-14",
+    "returnDate": "2023-01-17",
+    "seatAvailability": "7",
+    "price": {
+      "amount": 40.96,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA00003-b790715e-b2b8-4d23-ac27-d4e88c0284af"
+  },
+  {
+    "origin": "DUS",
+    "destination": "FRA",
+    "departureDate": "2023-01-14",
+    "returnDate": "2023-01-17",
+    "seatAvailability": "7",
+    "price": {
+      "amount": 100.96,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA00003-b790715e-b2b8-4d23-ac27-d4RR8c0e84af"
+  },
+  {
+    "origin": "FCO",
+    "destination": "FRA",
+    "departureDate": "2023-01-14",
+    "returnDate": "2023-01-17",
+    "seatAvailability": "7",
+    "price": {
+      "amount": 80.96,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA02903-b790715e-b2b8-4d23-ac27-d4RR8c0e84af"
+  },
+  {
+    "origin": "DVL",
+    "destination": "DVO",
+    "departureDate": "2023-02-20",
+    "returnDate": "2023-02-27",
+    "seatAvailability": "2",
+    "price": {
+      "amount": 190.96,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA109F3-b790715e-b2b8-4d23-ac27-d4RR8c0e84af"
+  },
+  {
+    "origin": "DXB",
+    "destination": "DEL",
+    "departureDate": "2023-02-20",
+    "returnDate": "2023-02-27",
+    "seatAvailability": "2",
+    "price": {
+      "amount": 390.96,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA10S03-b790715e-b2b8-4d23-ac27-d4RR8c0e84af"
+  },
+  {
+    "origin": "DEL",
+    "destination": "DXB",
+    "departureDate": "2023-02-20",
+    "returnDate": "2023-02-27",
+    "seatAvailability": "2",
+    "price": {
+      "amount": 290.96,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA10F03-b790715e-b2b8-4d23-ac27-d4RR8c0e84af"
+  }
+]
