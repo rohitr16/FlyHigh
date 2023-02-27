@@ -1,47 +1,45 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const responseObjOffers = require('./responses/offers.json');
-const responseObjAirports = require('./responses/airports.json')
+const express = require("express");
+const bodyParser = require("body-parser");
+const responseObjOffers = require("./responses/offers.json");
+const responseObjAirports = require("./responses/airports.json");
 
 const app = express();
 
 app.use(bodyParser.json());
 
-app.get('/api/promotions/priceoffers/flights/ond/:origin/:destination', (req, res) => {
-
+app.get(
+  "/api/promotions/priceoffers/flights/ond/:origin/:destination",
+  (req, res) => {
     const departureDate = req.query.departureDate;
     const returnDate = req.query.returnDate;
-    const service  = req.query.service;
+    const service = req.query.service;
 
     console.log(departureDate, returnDate, service);
-    console.log (req.params);
+    console.log(req.params);
 
     res.send(responseObjOffers);
+  }
+);
+
+app.get("/api/airports", (req, res) => {
+  res.send(responseObjAirports);
 });
 
-app.get('/api/airports', (req, res) => {
-    res.send(responseObjAirports);
+/**
+ * EXPRESS WILL SERVE PRODUCTION FILES
+ * LIKE main.js, main.css
+ */
+app.use(express.static("client/build"));
+
+/*
+ * IF ANYOTHER ROUTE FOR WHICH NO EXPRESS ROUTE
+ * IS DEFINED THEN LOAD INDEX.HTML (REACT ROUTE)
+ */
+const path = require("path");
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 });
 
-if(process.env.NODE_ENV === 'production') {
-
-    /**
-     * EXPRESS WILL SERVE PRODUCTION FILES
-     * LIKE main.js, main.css 
-    */
-    app.use(express.static('client/build'));
-
-    /*
-    * IF ANYOTHER ROUTE FOR WHICH NO EXPRESS ROUTE
-    * IS DEFINED THEN LOAD INDEX.HTML (REACT ROUTE)
-    */
-    const path = require('path');
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    });
-}
-
-
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT);

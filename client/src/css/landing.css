@@ -8,10 +8,10 @@
     gap: 10px;
 }
 
-@media only screen and (min-width: 56.25em) {
+@media only screen and (min-width: 37.5em) {
     .input_container {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
 }
@@ -123,4 +123,24 @@
 .h3-header {
     font-size: 20px;
     font-weight: 600;
+}
+
+.showlist_descripton { 
+    padding: 10px;
+}
+
+.showlist_header {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: none;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: block;
+    color: #161413;
+}
+
+.showlist_detail {
+    font-size: 14px;
+    line-height: 1.5;
+
 }
