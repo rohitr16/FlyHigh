@@ -29,6 +29,7 @@ Object {
           <div
             aria-label="offer card"
             class="card__side card__side--front"
+            tabindex="0"
           >
             <h4
               class="card__heading"
@@ -87,6 +88,7 @@ Object {
           <div
             aria-label="offer card"
             class="card__side card__side--front"
+            tabindex="0"
           >
             <h4
               class="card__heading"
@@ -171,6 +173,7 @@ Object {
         <div
           aria-label="offer card"
           class="card__side card__side--front"
+          tabindex="0"
         >
           <h4
             class="card__heading"
@@ -229,6 +232,7 @@ Object {
         <div
           aria-label="offer card"
           class="card__side card__side--front"
+          tabindex="0"
         >
           <h4
             class="card__heading"
