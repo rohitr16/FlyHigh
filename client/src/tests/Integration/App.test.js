@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor , fireEvent} from "@testing-library/react";
 import { Provider } from "react-redux";
 import { legacy_createStore as createStore, applyMiddleware } from "redux";
 import reduxThunk from "redux-thunk";
@@ -42,7 +42,7 @@ const handlers = [
           {
             code: "FRA",
             name: "Frankfurt International airport",
-            city: "Frankfure ",
+            city: "Frankfurt",
           }]
       ));
     }
@@ -72,10 +72,10 @@ test('fetches offers and renders result', async () => {
       
       expect(await screen.findByText(/Sorry No offers available for the above filters/i)).toBeInTheDocument();
 
-
       await waitFor(() => screen.findByText(/Dusseldorf/i));
 
-      expect(view.container.getElementsByClassName("card__side").length).toBe(1)
+      expect(screen.queryByText(/Sorry No offers available for the above filters/i)).not.toBeInTheDocument();
 
-
+      expect(view.container.getElementsByClassName("card__side").length).toBe(1);
+      
   });

@@ -15,7 +15,7 @@ export default function InputBox(props) {
       onInputChange={(event, newInputValue) => {
         props.setInputValue(newInputValue);
       }}
-      id="airport-select"
+      id={"airport-select" + props.label}
       sx={{ width: 300 }}
       options={props.options}
       autoHighlight
