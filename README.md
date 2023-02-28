@@ -27,3 +27,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 
+## React 
+
+Goto the client folder and there you can find all the scripts and resources for the react app.
