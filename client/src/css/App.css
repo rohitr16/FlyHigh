@@ -124,6 +124,19 @@ body {
   )
 }
 
+@media only screen and (min-width: 37.5em) {
+  .card__side { 
+    width: 30em;;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .card__side { 
+    width: 35em;;
+  }
+}
+
+
 .showlist__wrapper {
   position: relative;
   display: flex;
@@ -133,7 +146,7 @@ body {
   align-items: center;
 }
 
-@media only screen and (min-width: 56.25em) {
+@media only screen and (min-width: 37.5em) {
     .showlist__wrapper { 
       justify-content: space-between;
     }
@@ -145,8 +158,6 @@ body {
   margin: 0 auto;
   min-height: 100vh;
 }
-
-
 
 .card__picture {
   height: 60%;
@@ -176,7 +187,7 @@ body {
 }
 
 .card__details {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: 10px;
   text-align: center;
   color: #736d6d;

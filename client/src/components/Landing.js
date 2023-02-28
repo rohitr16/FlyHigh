@@ -19,7 +19,7 @@ function Landing(props) {
   useEffect(() => {
     const { getPriceOffers, getAirports } = props;
     getPriceOffers(
-      { urlParams: { origin: "ON", destination: "ON" }, queryParams: {} },
+      { urlParams: { origin: "DUS", destination: "FRA" }, queryParams: {} },
       navigate
     );
     getAirports(navigate);

@@ -15,7 +15,7 @@ function ShowListItem(props = {}) {
   const origin = airportCodeToCityMap[originCode] || originCode;
   const destination = airportCodeToCityMap[destinationCode] || destinationCode;
   return (
-    <div aria-label="offer card" className="card__side card__side--front">
+    <div tabIndex="0" aria-label="offer card" className="card__side card__side--front">
       <h4 className="card__heading">
         <span className="card__heading-span">
           <span className="card__heading-label">{origin}</span>

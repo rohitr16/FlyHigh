@@ -10,11 +10,15 @@ function ShowList(props = {}) {
                 <p className='showlist_detail'> Select origin and destination from the dropdown above to filter our your most appropiate offers </p>
             </div>
             <div className="showlist__wrapper">
-                {props.offersList.map((item) => {
+                {(props.offersList.length >0) ? props.offersList.map((item) => {
                     return (
                         <ShowListItem data={item} key={item.uuid} airportCodeToCityMap={props.airportCodeToCityMap}/>
                     );
-                })}
+                }): 
+                <div className='showlist_empty' aria-labelledby='emptyOffer'>
+                    <span id="emptyOffer">Sorry no offers available for the above filters</span>
+                </div>
+                }
             </div>       
         </div>
     );

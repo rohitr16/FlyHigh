@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { legacy_createStore as createStore, applyMiddleware} from 'redux';
 import reduxThunk from 'redux-thunk';
+import { BrowserRouter} from 'react-router-dom';
 import reducers from './reducers';
 import App from './components/App';
 
@@ -13,6 +14,8 @@ const root = createRoot(container);
 
 root.render(
     <Provider store={store}>
-        <App />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </Provider> 
 );

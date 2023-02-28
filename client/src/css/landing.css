@@ -144,3 +144,17 @@
     line-height: 1.5;
 
 }
+
+.showlist_empty {
+    width: 80vw;
+    height: 50vh;
+    margin: 0 auto;
+    text-align: center;
+    color: #9897966e;
+}
+
+.showlist_empty > span {
+    top: 50%;
+    position: relative;
+    font-size: 32px;
+}

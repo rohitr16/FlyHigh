@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/App.css";
-import logo from "../assets/img/logo.jpg";
 import '../css/footer.css';
 
 export default function Footer() {
@@ -30,15 +29,15 @@ export default function Footer() {
                 </a>
               </li>
               <li className="footer__item">
-                <a href="#" class="footer__link">
+                <a href="#" className="footer__link">
                   Privacy polic
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-1-of-2">
-          <p class="footer__copyright">
+        <div className="col-1-of-2">
+          <p className="footer__copyright">
             Developed by{" "}
             <a href="#" className="footer__link">
               Rohit Ranjan

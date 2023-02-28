@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import Header from './Header';
@@ -12,7 +12,6 @@ import "../css/App.css";
 function App() {
 
     return (
-      <BrowserRouter>
         <div className="container">
           <Header />
           <Routes>
@@ -23,7 +22,6 @@ function App() {
           </Routes>     
           <Footer />
         </div>
-      </BrowserRouter>
     );
 }
 
