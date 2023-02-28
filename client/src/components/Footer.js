@@ -1,12 +1,13 @@
 import React from "react";
 import "../css/App.css";
 import '../css/footer.css';
+import {textLabel} from "../labels/TextLables"; 
 
 export default function Footer() {
   return (
     <footer className="footer" aria-labelledby="footer">
       <h2 id="footer" style={{ display: "none" }}>
-        Footer
+        {textLabel.FOOTER}
       </h2>
 
       <div className="row">
@@ -15,22 +16,22 @@ export default function Footer() {
             <ul className="footer__list">
               <li className="footer__item">
                 <a href="#" className="footer__link">
-                  Company
+                  {textLabel.COMPANY}
                 </a>
               </li>
               <li className="footer__item">
                 <a href="#" className="footer__link">
-                  Contact Us
+                  {textLabel.CONTACT_US}
                 </a>
               </li>
               <li className="footer__item">
                 <a href="#" className="footer__link">
-                  Carrers
+                  {textLabel.CARRESR}
                 </a>
               </li>
               <li className="footer__item">
                 <a href="#" className="footer__link">
-                  Privacy polic
+                  {textLabel.PRIVACY_POLI}
                 </a>
               </li>
             </ul>
@@ -38,11 +39,11 @@ export default function Footer() {
         </div>
         <div className="col-1-of-2">
           <p className="footer__copyright">
-            Developed by{" "}
+            {textLabel.DEVELOPED_BY}{" "}
             <a href="#" className="footer__link">
-              Rohit Ranjan
+             {textLabel.NAME}
             </a>{" "}
-            for any personal and commercial use.
+            {textLabel.USAGE}
           </p>
         </div>
       </div>

@@ -1,0 +1,20 @@
+export const textLabel =  {
+    ERROR: "ERROR",
+    CONNECTION_ISSUE: "Look like there's a connection issue",
+    SERVER_UNAVAILABLE: "he server may not be avaible!",
+    GO_HOME: "Go to Home",
+    FOOTER: "Footer",
+    COMPANY: "Company",
+    CONTACT_US: "Contact Us",
+    CARRESR: "Carrers",
+    PRIVACY_POLI: " Privacy polic",
+    DEVELOPED_BY: "Developed by",
+    NAME: "Rohit Ranjan",
+    USAGE: "for any personal and commercial use.",
+    ABOUT_US: "About Us",
+    YOUR_BENEFITS : " Your Benefits",
+    BOOK_NOW: "Book Now",
+    OFFERS_HEADER: "Here you will find the best offers for you",
+    SELECT_FILTER_LABEL: "Select origin and destination from the dropdown above to filter our your most appropiate offers",
+    NO_OFFERS: "Sorry no offers available for the above filters"
+};

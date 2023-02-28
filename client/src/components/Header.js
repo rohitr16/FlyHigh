@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/img/logo.jpg";
 import "../css/header.css";
+import {textLabel} from "../labels/TextLables"; 
 
 function Header() {
   return (
@@ -20,22 +21,22 @@ function Header() {
           <ul className="navigation__list">
             <li className="navigation__item">
               <a href="#saction-about" className="navigation__link">
-                About Us
+                {textLabel.ABOUT_US}
               </a>
             </li>
             <li className="navigation__item">
               <a href="#section-features" className="navigation__link">
-                Your Benefits
+                {textLabel.YOUR_BENEFITS}
               </a>
             </li>
             <li className="navigation__item">
               <a href="#section-stories" className="navigation__link">
-                Contact
+                {textLabel.CONTACT_US}
               </a>
             </li>
             <li className="navigation__item">
               <a href="#section-book" className="navigation__link">
-                Book Now
+                {textLabel.BOOK_NOW}
               </a>
             </li>
           </ul>

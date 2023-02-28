@@ -7,6 +7,7 @@ import * as actions from "../actions";
 import "../css/landing.css";
 import { filter } from "../utils/Filter";
 
+
 function Landing(props) {
   const navigate = useNavigate();
 
