@@ -1,7 +1,7 @@
 # FlyHigh
 A React and NodeJS app to show best offers as fetched from api and filter them based on origin or destination
 
-# Getting Started with Create React App
+# Getting Started with NodeJS React App
 
 ## Available Scripts
 
