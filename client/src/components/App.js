@@ -1,7 +1,5 @@
 import React from 'react';
 import { Route, Routes} from 'react-router-dom';
-import { connect } from 'react-redux';
-import * as actions from '../actions';
 import Header from './Header';
 import Footer from './Footer';
 import Landing from './Landing';
@@ -25,4 +23,4 @@ function App() {
     );
 }
 
-export default connect(null , actions)(App);
+export default App;

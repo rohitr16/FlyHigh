@@ -23,7 +23,7 @@ function Landing(props) {
       navigate
     );
     getAirports(navigate);
-  }, []);
+  },[]);
 
   return (
     <main className="list__container">

@@ -1,13 +1,13 @@
 import React from "react";
-import { render, screen ,  } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { legacy_createStore as createStore, applyMiddleware } from "redux";
 import reduxThunk from "redux-thunk";
 import { MemoryRouter } from "react-router-dom";
 import { rest } from "msw";
 import { setupServer } from "msw/node";
-import App from "../components/App";
-import reducers from "../reducers";
+import App from "../../components/App";
+import reducers from "../../reducers";
 
 const handlers = [
   rest.get(
@@ -61,15 +61,21 @@ afterAll(() => server.close());
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 
-test('fetches & receives a user after clicking the fetch user button', async () => {
-     render(
+test('fetches offers and renders result', async () => {
+    const view =  render(
         <Provider store={store}>
           <MemoryRouter initialEntries={["/"]}>
             <App />
           </MemoryRouter>
         </Provider>
       );
-      //expect(screen.getByText(/Sorry No offers available for the above filters/i)).toBeInTheDocument();
-    
-      expect(await screen.findByText(/Sorry No offers available for the above filters/i)).toBeInTheDocument()
+      
+      expect(await screen.findByText(/Sorry No offers available for the above filters/i)).toBeInTheDocument();
+
+
+      await waitFor(() => screen.findByText(/Dusseldorf/i));
+
+      expect(view.container.getElementsByClassName("card__side").length).toBe(1)
+
+
   });
