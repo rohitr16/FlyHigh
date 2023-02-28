@@ -9,10 +9,10 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the express app in the development mode.\
 Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
 
-Starts the express server serving both apis and ui resources
+Serving both apis and ui resources
 
 ### `npm test`
 
