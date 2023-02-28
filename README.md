@@ -1,7 +1,7 @@
 # FlyHigh
 A React and NodeJS app to show best offers as fetched from api and filter them based on origin or destination
 
-# Getting Started with Create React App
+# Getting Started with NodeJS React App
 
 ## Available Scripts
 
@@ -9,15 +9,14 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the express app in the development mode.\
+Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Serving both apis and ui resources
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner for the ui/client  in the interactive watch mode.\
 
 ### `npm run build`
 
@@ -28,12 +27,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 
+## React 
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+Goto the client folder and there you can find all the scripts and resources for the react app.
