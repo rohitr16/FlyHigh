@@ -15,12 +15,15 @@ Object {
             class="showlist_header"
             id="list-description"
           >
-             Here you will find the best offers for you
+             
+            Here you will find the best offers for you
           </span>
           <p
             class="showlist_detail"
           >
-             Select origin and destination from the dropdown above to filter our your most appropiate offers 
+             
+            Select origin and destination from the dropdown above to filter our your most appropiate offers
+             
           </p>
         </div>
         <div
@@ -159,12 +162,15 @@ Object {
           class="showlist_header"
           id="list-description"
         >
-           Here you will find the best offers for you
+           
+          Here you will find the best offers for you
         </span>
         <p
           class="showlist_detail"
         >
-           Select origin and destination from the dropdown above to filter our your most appropiate offers 
+           
+          Select origin and destination from the dropdown above to filter our your most appropiate offers
+           
         </p>
       </div>
       <div
@@ -360,12 +366,15 @@ Object {
             class="showlist_header"
             id="list-description"
           >
-             Here you will find the best offers for you
+             
+            Here you will find the best offers for you
           </span>
           <p
             class="showlist_detail"
           >
-             Select origin and destination from the dropdown above to filter our your most appropiate offers 
+             
+            Select origin and destination from the dropdown above to filter our your most appropiate offers
+             
           </p>
         </div>
         <div
@@ -396,12 +405,15 @@ Object {
           class="showlist_header"
           id="list-description"
         >
-           Here you will find the best offers for you
+           
+          Here you will find the best offers for you
         </span>
         <p
           class="showlist_detail"
         >
-           Select origin and destination from the dropdown above to filter our your most appropiate offers 
+           
+          Select origin and destination from the dropdown above to filter our your most appropiate offers
+           
         </p>
       </div>
       <div
