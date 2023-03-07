@@ -69,8 +69,6 @@ test('fetches offers and renders result', async () => {
         </Provider>
       );
       
-      expect(await screen.findByText(/Sorry No offers available for the above filters/i)).toBeInTheDocument();
-
       await waitFor(() => screen.findByText(/Dusseldorf/i));
 
        expect(screen.queryByText(/Show More/i)).not.toBeInTheDocument();

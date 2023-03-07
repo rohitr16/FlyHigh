@@ -16,8 +16,8 @@ app.get(
 
     console.log(departureDate, returnDate, service);
     console.log(req.params);
+    setTimeout(() => {res.send(responseObjOffers);}, 100);
 
-    res.send(responseObjOffers);
   }
 );
 
