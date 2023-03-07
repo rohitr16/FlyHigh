@@ -17,14 +17,31 @@ function Landing(props) {
   const [valueDest, setValueDest] = useState(null);
   const [inputValueDest, setInputValueDest] = useState("");
 
+  /**
+   * Ariports won't be changing that often , so api is called only once
+   */
+  
   useEffect(() => {
-    const { getPriceOffers, getAirports } = props;
-    getPriceOffers(
-      { urlParams: { origin: "DUS", destination: "FRA" }, queryParams: {} },
-      navigate
-    );
+    const {getAirports } = props;
     getAirports(navigate);
   },[]);
+
+ 
+  /**
+   * To make get offers call when origin or destination changes to simulate
+   * actual behaviour when we get actual offers in response instead of mocked
+   */
+
+  useEffect(() => {
+    const { getPriceOffers} = props;
+    const origin = (valueOrigin) ? valueOrigin.code : "ANY";
+    const destination = (valueDest) ? valueDest.code : "ANY";
+    getPriceOffers(
+      { urlParams: { origin, destination }, queryParams: {} },
+      navigate
+    );
+  },[valueOrigin, valueDest]);
+
 
   return (
     <main className="list__container">
