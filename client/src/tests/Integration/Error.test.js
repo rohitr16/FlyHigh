@@ -14,19 +14,11 @@ const handlers = [
     '/api/promotions/priceoffers/flights/ond/:origin/:destination',
     (req, res, ctx) => {
       return res(
-        ctx.json([{
-          origin: "DUS",
-          destination: "FRA",
-          departureDate: "2023-01-14",
-          returnDate: "2023-01-17",
-          seatAvailability: "7",
-          price: {
-            amount: 100.96,
-            currency: "EUR",
-          },
-          offerType: "BestPrice",
-          uuid: "SA00903-b790715e-b2b8-4d23-ac27-d4RR8c0e84af",
-        }])
+        (res) => {
+            res.status = 500
+            res.headers.set('Content-Type', 'application/json');
+            return res;
+        }
       );
     }
   ),
@@ -61,7 +53,7 @@ const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 
 test('fetches offers and renders result', async () => {
-    const view =  render(
+    render(
         <Provider store={store}>
           <MemoryRouter initialEntries={["/"]}>
             <App />
@@ -69,12 +61,5 @@ test('fetches offers and renders result', async () => {
         </Provider>
       );
       
-      expect(await screen.findByText(/Sorry No offers available for the above filters/i)).toBeInTheDocument();
-
-      await waitFor(() => screen.findByText(/Dusseldorf/i));
-
-      expect(screen.queryByText(/Sorry No offers available for the above filters/i)).not.toBeInTheDocument();
-
-      expect(view.container.getElementsByClassName("card__side").length).toBe(1);
-      
+      expect(await screen.findByText(/Looks like there's a connection issue/i)).toBeInTheDocument();      
   });

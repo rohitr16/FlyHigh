@@ -1,6 +1,6 @@
 export const textLabel =  {
     ERROR: "ERROR",
-    CONNECTION_ISSUE: "Look like there's a connection issue",
+    CONNECTION_ISSUE: "Looks like there's a connection issue",
     SERVER_UNAVAILABLE: "he server may not be avaible!",
     GO_HOME: "Go to Home",
     FOOTER: "Footer",

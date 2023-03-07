@@ -82,6 +82,13 @@ Object {
               class="card__details"
             >
               <span
+                class="card_seat"
+              >
+                Only 
+                7
+                 seats left at →
+              </span>
+              <span
                 class="card_amount"
               >
                 100,96 €
@@ -140,6 +147,13 @@ Object {
             <div
               class="card__details"
             >
+              <span
+                class="card_seat"
+              >
+                Only 
+                7
+                 seats left at →
+              </span>
               <span
                 class="card_amount"
               >
@@ -229,6 +243,13 @@ Object {
             class="card__details"
           >
             <span
+              class="card_seat"
+            >
+              Only 
+              7
+               seats left at →
+            </span>
+            <span
               class="card_amount"
             >
               100,96 €
@@ -287,6 +308,13 @@ Object {
           <div
             class="card__details"
           >
+            <span
+              class="card_seat"
+            >
+              Only 
+              7
+               seats left at →
+            </span>
             <span
               class="card_amount"
             >

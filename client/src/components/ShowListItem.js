@@ -9,6 +9,7 @@ function ShowListItem(props = {}) {
     departureDate,
     returnDate,
     price = {},
+    seatAvailability
   } = data;
   const { amount, currency } = price;
 
@@ -50,9 +51,13 @@ function ShowListItem(props = {}) {
         {new Date(departureDate).toDateString()} ⇌ {new Date(returnDate).toDateString()}
       </div>
       <div className="card__details">
+      <span className="card_seat">
+          Only {seatAvailability} seats left at →
+        </span>
         <span className="card_amount">
           {currencyFormatter.format(amount, {code: currency})}
         </span>
+
       </div>
     </div>
   );
