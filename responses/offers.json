@@ -89,5 +89,70 @@
     },
     "offerType": "BestPrice",
     "uuid": "SA10F03-b790715e-b2b8-4d23-ac27-d4RR8c0e84af"
+  },
+  {
+    "origin": "DEL",
+    "destination": "BOM",
+    "departureDate": "2023-02-23",
+    "returnDate": "2023-02-27",
+    "seatAvailability": "4",
+    "price": {
+      "amount": 90.96,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA10F03-b793315e-b2b8-4d23-ac27-d4RR8c0e84af"
+  },
+  {
+    "origin": "CDG",
+    "destination": "BOM",
+    "departureDate": "2023-03-23",
+    "returnDate": "2023-04-03",
+    "seatAvailability": "8",
+    "price": {
+      "amount": 590.96,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA10L03-b793315e-b2b8-4d23-ac27-d4RR8c0e84af"
+  },
+  {
+    "origin": "CDG",
+    "destination": "MXP",
+    "departureDate": "2023-03-23",
+    "returnDate": "2023-04-03",
+    "seatAvailability": "6",
+    "price": {
+      "amount": 90.96,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA10L03-b79K115e-b2b8-4d23-ac27-d4RR8c0e84af"
+  },
+  {
+    "origin": "DUS",
+    "destination": "MXP",
+    "departureDate": "2023-03-23",
+    "returnDate": "2023-04-03",
+    "seatAvailability": "8",
+    "price": {
+      "amount": 120,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA10L03-b79K115e-b2SWb8-4d23-ac27-d4RR8c0e84af"
+  },
+  {
+    "origin": "DUS",
+    "destination": "CDG",
+    "departureDate": "2023-03-23",
+    "returnDate": "2023-04-03",
+    "seatAvailability": "4",
+    "price": {
+      "amount": 150.20,
+      "currency": "EUR"
+    },
+    "offerType": "BestPrice",
+    "uuid": "SA10L03-b7A2115e-b2SWb8-4d23-ac27-d4RR8c0e84af"
   }
 ]

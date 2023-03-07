@@ -12,10 +12,7 @@ function Landing(props) {
   const navigate = useNavigate();
 
   const [valueOrigin, setValueOrigin] = useState(null);
-  const [inputValueOrigin, setInputValueOrigin] = useState("");
-
   const [valueDest, setValueDest] = useState(null);
-  const [inputValueDest, setInputValueDest] = useState("");
 
   /**
    * Ariports won't be changing that often , so api is called only once
@@ -30,6 +27,7 @@ function Landing(props) {
   /**
    * To make get offers call when origin or destination changes to simulate
    * actual behaviour when we get actual offers in response instead of mocked
+   * ANY is used to incase no destination or origin is selected.
    */
 
   useEffect(() => {
@@ -50,17 +48,13 @@ function Landing(props) {
           label="Departure Airport "
           options={props.airportList}
           value={valueOrigin}
-          inputValue={inputValueOrigin}
           setValue={setValueOrigin}
-          setInputValue={setInputValueOrigin}
         />
         <InputBox
           label="Arrival Airport "
           options={props.airportList}
           value={valueDest}
-          inputValue={inputValueDest}
           setValue={setValueDest}
-          setInputValue={setInputValueDest}
         />
       </div>
       <ShowList offersList={filter(props.offersList, valueOrigin, valueDest)} airportCodeToCityMap={props.airportCodeToCityMap} />
