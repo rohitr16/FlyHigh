@@ -152,6 +152,12 @@ body {
     }
 }
 
+@media only screen and (min-width: 58.5em) {
+  .showlist__wrapper { 
+    justify-content: flex-start;
+  }
+}
+
 .list__container {
   padding: 10px;
   max-width: 1440px;
@@ -254,6 +260,7 @@ body {
   border-radius: 15px;
   padding: 4px;
   box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.15);
+  
 }
 
 
