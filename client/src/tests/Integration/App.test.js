@@ -73,6 +73,8 @@ test('fetches offers and renders result', async () => {
 
       await waitFor(() => screen.findByText(/Dusseldorf/i));
 
+       expect(screen.queryByText(/Show More/i)).not.toBeInTheDocument();
+
       expect(screen.queryByText(/Sorry No offers available for the above filters/i)).not.toBeInTheDocument();
 
       expect(view.container.getElementsByClassName("card__side").length).toBe(1);

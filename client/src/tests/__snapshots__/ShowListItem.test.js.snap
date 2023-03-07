@@ -52,7 +52,8 @@ Object {
           class="card__details"
         >
           Sat Jan 14 2023
-           ⇌ 
+           ⇌
+           
           Tue Jan 17 2023
         </div>
         <div
@@ -121,7 +122,8 @@ Object {
         class="card__details"
       >
         Sat Jan 14 2023
-         ⇌ 
+         ⇌
+         
         Tue Jan 17 2023
       </div>
       <div

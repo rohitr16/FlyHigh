@@ -16,5 +16,6 @@ export const textLabel =  {
     BOOK_NOW: "Book Now",
     OFFERS_HEADER: "Here you will find the best offers for you",
     SELECT_FILTER_LABEL: "Select origin and destination from the dropdown above to filter our your most appropiate offers",
-    NO_OFFERS: "Sorry no offers available for the above filters"
+    NO_OFFERS: "Sorry no offers available for the above filters",
+    SHOW_MORE: "Show More"
 };

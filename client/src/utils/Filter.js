@@ -11,11 +11,3 @@ export function filter(offerlist = [], valueOrigin, valueDest) {
        return true;
     });
 }
-
-export function fillFullNameFromCode(offerlist = [], airportList = []) {
-  offerlist.forEach((item) => {
-      airportList.find((airport) => {
-        return airport.code === item.origin;
-      });
-  })
-}

@@ -20,6 +20,7 @@ function ShowList(props = {}) {
                             <ShowListItem data={item} key={item.uuid} airportCodeToCityMap={props.airportCodeToCityMap}/>
                         );
                     }
+                    return null;
                     
                 }): 
                 <div className='showlist_empty' aria-labelledby='emptyOffer'>
@@ -28,7 +29,7 @@ function ShowList(props = {}) {
                 }
             </div>
             {(props.offersList.length >= offset) ? 
-                ( <button className="btn-blue" onClick={() => setOffset((offset) => offset + 10)}>Show More</button>) : 
+                ( <button className="btn-blue" onClick={() => setOffset((offset) => offset + 10)}>{textLabel.SHOW_MORE}</button>) : 
                 null}       
         </div>
     );

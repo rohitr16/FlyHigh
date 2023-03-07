@@ -52,7 +52,7 @@ afterAll(() => server.close());
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 
-test('fetches offers and renders result', async () => {
+test('fetches offers and fails due to error', async () => {
     render(
         <Provider store={store}>
           <MemoryRouter initialEntries={["/"]}>
