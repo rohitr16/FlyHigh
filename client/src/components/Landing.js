@@ -26,8 +26,9 @@ function Landing(props) {
  
   /**
    * To make get offers call when origin or destination changes to simulate
-   * actual behaviour when we get actual offers in response instead of mocked
-   * ANY is used to incase no destination or origin is selected.
+   * actual behaviour when we get actual offers in response instead of mocked.
+   * ANY is used incase no destination or origin is selected.
+   * Then ofcourse we won't need filtering on UI as implmented currently.
    */
 
   useEffect(() => {

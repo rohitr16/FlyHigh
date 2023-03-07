@@ -36,7 +36,7 @@ function ShowList(props = {}) {
           </div>
         )}
       </div>
-      {offersList.length > offset ? (
+      {(offersList.length > offset) ? (
         <button
           className="btn-blue"
           onClick={() => setOffset((offset) => offset + increments)}
