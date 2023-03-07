@@ -130,9 +130,15 @@ body {
   }
 }
 
+@media only screen and (min-width: 58.5em) {
+  .card__side { 
+    width: 45em;;
+  }
+}
+
 @media only screen and (min-width: 75em) {
   .card__side { 
-    width: 35em;;
+    width: 50em;;
   }
 }
 
@@ -152,11 +158,6 @@ body {
     }
 }
 
-@media only screen and (min-width: 58.5em) {
-  .showlist__wrapper { 
-    justify-content: flex-start;
-  }
-}
 
 .list__container {
   padding: 10px;
