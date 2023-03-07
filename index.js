@@ -22,7 +22,10 @@ app.get(
 );
 
 app.get("/api/airports", (req, res) => {
-  res.send(responseObjAirports);
+  const filteresRes = responseObjAirports.filter((item) => {
+    return item.type === "Airports" && item.name !== "";
+  });
+  res.send(filteresRes);
 });
 
 /**

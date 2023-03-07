@@ -11,29 +11,26 @@ export default function InputBox(props) {
       onChange={(event, newValue) => {
         props.setValue(newValue);
       }}
-      inputValue={props.inputValue}
-      onInputChange={(event, newInputValue) => {
-        props.setInputValue(newInputValue);
-      }}
       id={"airport-select" + props.label}
       sx={{ width: 300 }}
       options={props.options}
+      autoComplete
       autoHighlight
       aria-haspopup="true"
-      getOptionLabel={(option) => option.name}
+      getOptionLabel={(option) => option.city}
       renderOption={(props, option) => (
         <Box
           component="li"
           sx={{fontSize: 14}}
           {...props}
+          key={option.code}
         >
-          {option.name} ({option.code})
+          {option.city} ({option.name})
         </Box>
       )}
       renderInput={(params) => (
         <TextField
           {...params}
-          label={props.label}
           sx={{fontSize: 18}}
           inputProps={{
             ...params.inputProps,
