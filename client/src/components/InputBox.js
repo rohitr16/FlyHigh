@@ -32,6 +32,7 @@ export default function InputBox(props) {
         <TextField
           {...params}
           sx={{fontSize: 18}}
+          label={props.label}
           inputProps={{
             ...params.inputProps,
             autoComplete: "new-password", // disable autocomplete and autofill

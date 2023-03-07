@@ -2,7 +2,7 @@ import React from "react";
 import currencyFormatter from 'currency-formatter';
 
 function ShowListItem(props = {}) {
-  const { data = {}, airportCodeToCityMap } = props;
+  const { data = {}, airportCodeToCityMap = {} } = props;
   const {
     origin: originCode,
     destination: destinationCode,
@@ -15,6 +15,7 @@ function ShowListItem(props = {}) {
 
   const origin = airportCodeToCityMap[originCode] || originCode;
   const destination = airportCodeToCityMap[destinationCode] || destinationCode;
+  
   return (
     <div tabIndex="0" aria-label="offer card" className="card__side card__side--front">
       <h4 className="card__heading">
