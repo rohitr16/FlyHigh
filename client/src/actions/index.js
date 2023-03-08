@@ -11,10 +11,11 @@ export const getPriceOffers = ({urlParams, queryParams}, navigate) => async disp
         const res = await axios.get(url, {params: queryParams});
         
         dispatch({ type: ActionTypes.GET_OFFERS_LIST, payload: res.data });
-        dispatch({type: ActionTypes.HIDE_LOADER});
     } catch (error) {
         navigate('/error');
-    }    
+    } finally {
+        dispatch({type: ActionTypes.HIDE_LOADER});
+    }   
 };
 
 export const getAirports = (navigate) => async dispatch => {
@@ -30,9 +31,10 @@ export const getAirports = (navigate) => async dispatch => {
         });
         dispatch({ type: ActionTypes.GET_AIRPOTS_LIST, payload: res.data });
         dispatch({ type: ActionTypes.SET_CITY_CODE_MAP, payload: airportCodeToCityMap});
-        dispatch({type: ActionTypes.HIDE_LOADER});
     } catch (error) {
         navigate('/error');
+    } finally {
+        dispatch({type: ActionTypes.HIDE_LOADER});
     }
 
 };
